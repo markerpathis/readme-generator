@@ -23,8 +23,44 @@ inquirer
   .prompt([
     {
       type: "input",
-      message: "",
-      name: "",
+      message: "Please enter the title of your project:",
+      name: "inputTitle",
+    },
+    {
+      type: "input",
+      message: "Please enter a description of your project:",
+      name: "inputDescription",
+    },
+    {
+      type: "input",
+      message: "Please enter a installation instructions for your project:",
+      name: "inputInstallation",
+    },
+    {
+      type: "input",
+      message: "Please enter usage instructions for your project:",
+      name: "inputUsage",
+    },
+    {
+      type: "input",
+      message:
+        "Please enter the details of anyone else who contributed to this project:",
+      name: "inputContributions",
+    },
+    {
+      type: "input",
+      message: "Please enter the details of any tests for your project:",
+      name: "inputTests",
+    },
+    {
+      type: "input",
+      message: "Please enter your GitHub username:",
+      name: "inputGitHubUser",
+    },
+    {
+      type: "email",
+      message: "Please enter your email address:",
+      name: "inputEmail",
     },
   ])
   .then((response) =>
