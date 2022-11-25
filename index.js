@@ -64,7 +64,30 @@ inquirer
     },
   ])
   .then((response) =>
-    fs.writeFile("README.md", ``, (err) =>
-      err ? console.error(err) : console.log("Success!")
+    fs.writeFile(
+      "README.md",
+      `
+# ${response.inputTitle}
+
+## Description
+${response.inputDescription}
+
+## Installation
+${response.inputInstallation}
+
+## Usage
+${response.inputUsage}
+
+## Contributing
+${response.inputContributions}
+
+## Tests
+${response.inputTests}
+
+## Questions
+${response.inputGitHubUser}
+${response.inputEmail}
+    `,
+      (err) => (err ? console.error(err) : console.log("Success!"))
     )
   );
