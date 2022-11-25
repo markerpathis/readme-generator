@@ -72,11 +72,21 @@ inquirer
 ## Description
 ${response.inputDescription}
 
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
 ## Installation
 ${response.inputInstallation}
 
 ## Usage
 ${response.inputUsage}
+
+## License
 
 ## Contributing
 ${response.inputContributions}
@@ -86,6 +96,9 @@ ${response.inputTests}
 
 ## Questions
 ${response.inputGitHubUser}
+<br />
+[LINK TO USER ON GITHUB](https://github.com/${response.inputGitHubUser})
+<br />
 ${response.inputEmail}
     `,
       (err) => (err ? console.error(err) : console.log("Success!"))

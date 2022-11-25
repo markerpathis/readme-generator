@@ -1,22 +1,35 @@
 
-# PROJECTNAME
+# PROJECTTITLE
 
 ## Description
-Description... is this
+DESCRIPTION GOES HERE
+
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Installation
-no installation needed
+INSTALL INSTRUCTIONS GO HERE
 
 ## Usage
-no usage instructions
+USAGE INSTRUCTIONS INPUT HERE
+
+## License
 
 ## Contributing
-nope just me
+NOBODY ELSE
 
 ## Tests
-no tests
+NO TESTS
 
 ## Questions
 markerpathis
+<br />
+[LINK TO USER ON GITHUB](https://github.com/markerpathis)
+<br />
 parkerjmathis@gmail.com
     
