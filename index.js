@@ -73,51 +73,51 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile(
+    fileName,
+    `
+# ${data.inputTitle}
+
+## Description
+${data.inputDescription}
+
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation
+${data.inputInstallation}
+
+## Usage
+${data.inputUsage}
+
+## License
+
+## Contributing
+${data.inputContributions}
+
+## Tests
+${data.inputTests}
+
+## Questions
+${data.inputGitHubUser}
+<br />
+[LINK TO USER ON GITHUB](https://github.com/${data.inputGitHubUser})
+<br />
+${data.inputEmail}
+    `,
+    (err) => (err ? console.error(err) : console.log("Success!"))
+  );
+}
 
 // TODO: Create a function to initialize app
 function init() {
-  inquirer.prompt(questions).then((response) =>
-    fs.writeFile(
-      "README.md",
-      `
-  # ${response.inputTitle}
-  
-  ## Description
-  ${response.inputDescription}
-  
-  ## Table of Contents
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
-  - [Contributing](#contributing)
-  - [Tests](#tests)
-  - [Questions](#questions)
-  
-  ## Installation
-  ${response.inputInstallation}
-  
-  ## Usage
-  ${response.inputUsage}
-  
-  ## License
-  
-  ## Contributing
-  ${response.inputContributions}
-  
-  ## Tests
-  ${response.inputTests}
-  
-  ## Questions
-  ${response.inputGitHubUser}
-  <br />
-  [LINK TO USER ON GITHUB](https://github.com/${response.inputGitHubUser})
-  <br />
-  ${response.inputEmail}
-      `,
-      (err) => (err ? console.error(err) : console.log("Success!"))
-    )
-  );
+  inquirer.prompt(questions).then((data) => writeToFile("README.md", data));
 }
 
 // Function call to initialize app
