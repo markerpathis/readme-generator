@@ -1,7 +1,9 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(answers) {
-  if (answers.inputLicense === "Apache 2.0") {
+  console.log(answers.inputLicense);
+  if (answers.inputLicense === "Apache License 2.0") {
+    console.log("APACHE!");
     return `![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`;
   }
 }

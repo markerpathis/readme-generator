@@ -39,10 +39,10 @@ const questions = [
     name: "inputInstallation",
   },
   {
-    type: "mult-choice",
+    type: "list",
     message: "Please select the license for your project:",
     name: "inputLicense",
-    rows: [],
+    choices: ["Apache License 2.0", "GNU General Public License v3.0"],
   },
   {
     type: "input",
