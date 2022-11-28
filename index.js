@@ -41,7 +41,7 @@ const questions = [
   {
     type: "mult-choice",
     message: "Please select the license for your project:",
-    name: "inputUsage",
+    name: "inputLicense",
     rows: [],
   },
   {
