@@ -1,7 +1,5 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Function that returns a license badge and link based on which license is passed in
 // If there is no license, return an empty string
-
-// TRY OUT A SWITCH STATEMENT
 function renderLicenseBadge(answers) {
   const license = answers.inputLicense;
 
@@ -21,13 +19,13 @@ function renderLicenseBadge(answers) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
+// Function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(answers) {
   return `This project is licensed under the terms of the ${answers.inputLicense}.`;
 }
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README
 function generateMarkdown(answers) {
   return `
   # ${answers.inputTitle}

@@ -1,27 +1,9 @@
-/////////////////////////////////////////////////////////////////////////
-// PSEUDO CODE //////////////////////////////////////////////////////////
-// 1. Install inquirer
-// 2. Set up the inputs for the README
-///// What is included in the README?
-//////// Title of my project
-//////// Sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-////////// Table of Contents
-/////////////// Example "[License](#license)" ....... # license
-////////// Installation
-/////////////// Instructions, install NPM / inquirer?
-////////// Usage
-////////// Contributing
-////////// Tests
-////////// Questions
-/////////////// Should prompt the user for github username. Use gibhub api and return profile link?
-/////////////// Should prompt the user for email address, then include instructions on how to reach out with additional questions
-
-// TODO: Include packages needed for this application
+// Packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown.js");
 
-// TODO: Create an array of questions for user input
+// Array of questions for user input
 const questions = [
   {
     type: "input",
@@ -79,14 +61,14 @@ const questions = [
   },
 ];
 
-// TODO: Create a function to write README file
+// Function to write README file
 function writeToFile(fileName, answers) {
   fs.writeFile(fileName, generateMarkdown(answers), (err) =>
     err ? console.error(err) : console.log("Success!")
   );
 }
 
-// TODO: Create a function to initialize app
+// Function to initialize app
 function init() {
   inquirer
     .prompt(questions)
