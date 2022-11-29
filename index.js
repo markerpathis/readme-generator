@@ -42,7 +42,14 @@ const questions = [
     type: "list",
     message: "Please select the license for your project:",
     name: "inputLicense",
-    choices: ["Apache License 2.0", "GNU General Public License v3.0"],
+    choices: [
+      "Apache License 2.0",
+      "GNU General Public License v3.0",
+      "MIT License",
+      "BSD 2-Clause 'Simplified' License",
+      "BSD 3-Clause 'New' or 'Revised' License",
+      "None",
+    ],
   },
   {
     type: "input",
