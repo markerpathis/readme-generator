@@ -39,6 +39,11 @@ const questions = [
     name: "inputInstallation",
   },
   {
+    type: "input",
+    message: "Please enter the details about the usage for this project:",
+    name: "inputUsage",
+  },
+  {
     type: "list",
     message: "Please select the license for your project:",
     name: "inputLicense",
@@ -50,12 +55,6 @@ const questions = [
       "BSD 3-Clause 'New' or 'Revised' License",
       "None",
     ],
-  },
-  {
-    type: "input",
-    message:
-      "Please enter the details of anyone else who contributed to this project:",
-    name: "inputContributions",
   },
   {
     type: "input",
