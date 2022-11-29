@@ -22,7 +22,14 @@ function renderLicenseBadge(answers) {
 // Function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(answers) {
-  return `This project is licensed under the terms of the ${answers.inputLicense}.`;
+  const license = answers.inputLicense;
+
+  switch (license) {
+    case "None":
+      return ``;
+    default:
+      return `This project is licensed under the terms of the ${answers.inputLicense}.`;
+  }
 }
 
 // Function to generate markdown for README
