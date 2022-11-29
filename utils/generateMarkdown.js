@@ -14,6 +14,12 @@ function renderLicenseBadge(answers) {
       return `[![License](https://img.shields.io/badge/License-BSD_2--Clause_Simplified_License-blue.svg)](https://choosealicense.com/licenses/bsd-2-clause/)`;
     case "BSD 3-Clause 'New' or 'Revised' License":
       return `[![License](https://img.shields.io/badge/License-BSD_3--Clause_New_or_Revised_License-blue.svg)](https://choosealicense.com/licenses/bsd-3-clause/)`;
+    case "Boost Software License 1.0":
+      return `[![License](https://img.shields.io/badge/License-Boost_Software_License_1.0-blue.svg)](https://www.boost.org/LICENSE_1_0.txt)`;
+    case "Creative Commons Zero v1.0 Universal License":
+      return `[![License](https://img.shields.io/badge/License-Creative_Commons_Zero_v1.0_Universal_License-blue.svg)](https://creativecommons.org/publicdomain/zero/1.0/)`;
+    case "Eclipse Public License 2.0":
+      return `[![License](https://img.shields.io/badge/License-Eclipse_Public_License_2.0-blue.svg)](https://www.eclipse.org/legal/epl-2.0/)`;
     default:
       return ``;
   }
@@ -28,7 +34,7 @@ function renderLicenseSection(answers) {
     case "None":
       return ``;
     default:
-      return `This project is licensed under the terms of the ${answers.inputLicense}.`;
+      return `This project is licensed under the terms of the ${answers.inputLicense}. The license badge at the top of this README includes a link to the description of the license.`;
   }
 }
 
