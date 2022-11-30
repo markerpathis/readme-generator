@@ -72,11 +72,9 @@ function generateMarkdown(answers) {
   ${answers.inputTests}
   
   ## Questions
-  ${answers.inputGitHubUser}
-  <br />
-  [LINK TO USER ON GITHUB](https://github.com/${answers.inputGitHubUser})
-  <br />
-  ${answers.inputEmail}
+  If you have any questions about this project, please reach get in touch via GitHub or email.
+  GitHub: (https://github.com/${answers.inputGitHubUser})
+  Email: ${answers.inputEmail}
       `;
 }
 
