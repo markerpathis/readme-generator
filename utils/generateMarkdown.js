@@ -60,7 +60,10 @@ function generateMarkdown(answers) {
   ${answers.inputInstallation}
   
   ## Usage
-  ${answers.inputUsage}
+  ${answers.inputUsage} 
+  <br /> <br />
+  ${answers.inputMedia}
+ 
   
   ## License
   ${renderLicenseSection(answers)}
@@ -72,8 +75,8 @@ function generateMarkdown(answers) {
   ${answers.inputTests}
   
   ## Questions
-  If you have any questions about this project, please reach get in touch via GitHub or email.
-  GitHub: (https://github.com/${answers.inputGitHubUser})
+  If you have any questions about this project, please reach out via GitHub or email. <br />
+  GitHub: (https://github.com/${answers.inputGitHubUser}) <br />
   Email: ${answers.inputEmail}
       `;
 }
