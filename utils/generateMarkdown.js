@@ -61,9 +61,6 @@ function generateMarkdown(answers) {
   
   ## Usage
   ${answers.inputUsage} 
-  <br /> <br />
-  ${answers.inputMedia}
- 
   
   ## License
   ${renderLicenseSection(answers)}

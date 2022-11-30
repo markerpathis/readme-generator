@@ -27,12 +27,6 @@ const questions = [
     name: "inputUsage",
   },
   {
-    type: "input",
-    message:
-      "Please enter the filepath of a screenshot or gif that you would like to include in the Usage section of the README (leave blank if you don't want to include one):",
-    name: "inputMedia",
-  },
-  {
     type: "list",
     message: "Please select the license for your project:",
     name: "inputLicense",
@@ -45,17 +39,6 @@ const questions = [
       "Boost Software License 1.0",
       "Creative Commons Zero v1.0 Universal License",
       "Eclipse Public License 2.0",
-      // NEW
-      // "GNU Affero General Public License v3.0",
-      // https://www.gnu.org/licenses/agpl-3.0.en.html
-      // "GNU General Public License v2.0",
-      // https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-      // "GNU Lesser General Public License v2.1",
-      // https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html
-      // "Mozilla Public License 2.0",
-      // https://www.mozilla.org/en-US/MPL/2.0/
-      // "The Unlicense",
-      // https://unlicense.org/
       "None",
     ],
   },
@@ -67,7 +50,8 @@ const questions = [
   },
   {
     type: "input",
-    message: "Please enter details about any tests for this project (type N/A if there are none):",
+    message:
+      "Please enter details about any tests for this project (type N/A if there are none):",
     name: "inputTests",
   },
   {
